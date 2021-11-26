@@ -1,0 +1,1 @@
+This file is going to be copied to myDirectory-2 folder
