@@ -35,6 +35,15 @@ let sayHi = function () { //no name provided, so these are called as anonymous f
 
 sayHi();
 
+//if any programming language has the ability to treat functions as values, to pass them as arguments and to return a function
+//from another function then it is said that programming language has First Class Functions and the functions are called as
+//first class citizen in that programming language.
+
+//In the above example, a function is stored in a variable sayHi, and the variable with parenthesis, i.e sayHi() calls the body
+//of the function and shows the output in the console.
+
+//Anonymous functions are used in places where that function is used as a value.
+
 let multiplication = function (a, b) {
     console.log(a*b);
 }//anonymous function
