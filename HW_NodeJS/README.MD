@@ -1,8 +1,8 @@
-# **Wcat Command Line Project**
+# 🚀 **Wcat Command Line Project**
 
 It is used to display or make a copy content of one or more files in the terminal 
 
-## **Commands:**
+## 👨‍💻 **Commands:**
 1. wcat filepath => displays content of the file in the terminal ✔
 1. wcat filepath1 filepath2 filepath3... => displays content of all files in the terminal(concatinated form) in the given order. ✔
 1. wcat -s filepath => convert big line breaks into a singular line break. ✔
@@ -13,7 +13,7 @@ It is used to display or make a copy content of one or more files in the termina
 1. node wcat -s filename2path > filename2path => get the file content of filename remove large spaces and save the output in filename2path. ✔
 #### _We can mix and match the options._
 
-## **Edge cases:**
+## 🚫 **Edge cases:**
 
 1. If entered files are not found then it must give files do not exist error.
 1. If -n and -b, 2 options are available together then command should give you an error, that both optiones can not be processed
