@@ -16,5 +16,5 @@ It is used to display or make a copy content of one or more files in the termina
 ## 🚫 **Edge cases:**
 
 1. If entered files are not found then it must give files do not exist error.
-1. If -n and -b, 2 options are available together then command should give you an error, that both optiones can not be processed
+1. If -n and -b, 2 options are available together then command should give you an error, that both options can not be processed
 simultaneously.
