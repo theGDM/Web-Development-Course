@@ -21,7 +21,9 @@ function checkWcat() {
             commandArr[2] = 1;
         }
     }
-    if (flag == 0) {
+    if (flag == 1) {
+        displayFileContent(inputArr);        
+    } else {
         console.log("You entered wrong command :(");
     }
 }
@@ -29,8 +31,6 @@ function checkWcat() {
 checkWcat();
 
 // console.log(commandArr);
-
-displayFileContent(inputArr)
 
 //function to display content of any file
 function displayFileContent(inputArr){
