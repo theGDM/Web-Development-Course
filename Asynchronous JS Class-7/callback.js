@@ -35,10 +35,11 @@ let data = fs.readFileSync("text.txt"); //Synchronous function
 console.log(data.toString());
 console.log("after");
 
-//Asynchronous behaviour(Asynchronous way of reading file)
+//Asynchronous behaviour (Asynchronous way of reading file)
 console.log("Before");
 fs.readFile("text.txt", cb); //Asynchronous function
 function cb(err, data) {
+    //error first call function, cnsider error first in parameter
     if (err) {
         console.log(err);
     } else {
