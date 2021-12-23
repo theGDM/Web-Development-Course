@@ -1,0 +1,6 @@
+-> Function definition
+-> function's Expressions
+-> arrow function
+-> IIFEs
+-> closures
+-> anonymous function
