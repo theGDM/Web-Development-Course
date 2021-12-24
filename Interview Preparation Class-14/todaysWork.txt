@@ -1,0 +1,26 @@
+Js is multiparadigm language
+ \_ oops
+ \_ functional programming
+--------------------------------------------------------------------------------------------------------
+-> arguments array
+-> closure
+-> let, var, const
+
+Hoisting 
+        \_ Execution context
+--------------------------------------------------------------------------------------------------------
+code execution:
+1) Memory allocation
+                    \_ function definition - memory allocate
+                    \_ variables - undefine set
+2) Code Execution 
+--------------------------------------------------------------------------------------------------------
+1. Any code in Js, will run in a execution context (In a bubble)
+2. default execution context is Global Execution context(For the code that is outside of every function)
+3. New execution context is created when function is being called(calling)
+4. Each Execution context have two parts
+                                        \_ Memory allocation 
+                                        \_ Code Execution 
+- Default execution context will form for, statements which are outside of the function.        
+--------------------------------------------------------------------------------------------------------     
+                             
