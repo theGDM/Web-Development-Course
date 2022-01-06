@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+#folderContainer{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.folder{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 14);
+    background-color: rgb(44, 94, 204);
+    color: antiquewhite;
+    border-radius: 10px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.folder span{
+    text-decoration: underline;
+}
+
+#myBtn{
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid orangered;
+    background-color: bisque;
+    margin: 15px 0;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#myBtn:hover{
+    transform: translateX(2px) translateY(2px);
+}
