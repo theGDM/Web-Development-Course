@@ -1,0 +1,8 @@
+Q) on first editing and while deleting the same folder, we get confirmation message before deleting, but that have
+   the name of previous fileName, not the latest one!
+Ans: This is because, the inner function which is callback function of addEvenListner invoked on spanDelete will
+make closure on fNmae which is the outer function
+
+Q) How we are deleting the folder?
+Ans: We are actually ataching delete function on every spanDelete of folder after creating them.
+
