@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First hands at frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="folderContainer">
+        <!-- <p>Hello!</p>
+        <p>Hello phir se!</p>
+        <p>Hello phir se aur!</p> -->
+    </div>
+    <!-- templates are not visible on page -->
+    <!-- ye bo wala html hai jo hum baad me daalna chaahte hai page me -->
+    <!-- templates ke under jo bhi pada hota hai use, document se ni nikal sakte, as it is hided in document
+    but we can find in myTemplates.content and then using querySelector method on it. -->
+    <template id="pageTemplate">
+        <div class="folder">
+            <span action="edit">Edit</span>
+            <span action="delete">Delete</span>
+            <div purpose="name"></div>
+        </div>
+    </template>
+    <button id="myBtn">New Folder</button>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
