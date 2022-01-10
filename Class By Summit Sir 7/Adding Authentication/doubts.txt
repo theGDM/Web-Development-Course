@@ -1,0 +1,13 @@
+Q) double not concept?
+!!false  //false
+!!0      //false
+!!null   //false
+!!undefined   //false
+!!""     //false
+
+is identicle to --
+  if(fjson != null && fjson != undefined && fjson != false && fjson.length != 0){
+      -----------
+  }
+   
+
