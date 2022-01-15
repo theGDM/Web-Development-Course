@@ -1,6 +1,7 @@
 function outer(first) {
     console.log("Inside outer");
-    return function inner(second) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           console.log("Inside inner");
+    return function inner(second) {
+        console.log("Inside inner");
         return first * second;
     }
 }
@@ -10,3 +11,5 @@ console.log("Before calling rVal that contains inner");
 console.log(rVal);
 var ans = rVal(4);
 console.log(ans);
+var res = outer(3)(4);
+console.log(res);
