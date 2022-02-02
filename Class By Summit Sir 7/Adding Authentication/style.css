@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,7 +23,7 @@ body{
 
 .folder{
     width: 100px;
-    height: 100px;
+    height: 110px;
     margin: 15px;
     background-color: #888;
     color: rgb(0, 0, 0);
@@ -56,20 +57,50 @@ body{
 }
 
 .folder span[action = "delete"],
-.folder span[action = "edit"] {
+.folder span[action = "edit"],
+.folder span[action = "view"] {
     width: 60px;
     padding: 2px 4px;
     text-align: center;
     border: 1px solid white;
 }
 
+.folder span[action = "view"]:hover{
+    color: rgb(0, 64, 116);
+    cursor: pointer;
+}
+
 .folder span[action = "delete"]:hover{
-    color: rgb(141, 0, 0);
+    color: rgb(165, 0, 0);
     cursor: pointer;
 }
 
 .folder span[action = "edit"]:hover{
     color: green;
     cursor: pointer;
+}
+
+/* breadCrumb styling */
+#divBreadCrumb{
+    background-color: #888;
+    padding: 3px 1px;
+    font-weight: 500;
+    border: 1px solid #ffff;
+}
+
+.path{
+    background-color: #333;
+    color: #888;
+    padding: 1px 4px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-right: 3px solid #000;
+}
+
+.path:hover{
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+    border-right: 3px solid #fff;
 }
 
