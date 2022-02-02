@@ -10,11 +10,16 @@
 </head>
 
 <body>
+    <!-- Adding bread crumb -->
+    <div id="divBreadCrumb">
+        <a class="path" folderId="-1">Root</a>
+    </div>
     <div id="folderContainer">
         <!-- <p>Hello!</p>
         <p>Hello phir se!</p>
         <p>Hello phir se aur!</p> -->
     </div>
+    <button id="myBtn">New Folder</button>
     <!-- templates are not visible on page -->
     <!-- ye bo wala html hai jo hum baad me daalna chaahte hai page me -->
     <!-- templates ke under jo bhi pada hota hai use, document se ni nikal sakte, as it is hided in document
@@ -23,10 +28,11 @@
         <div class="folder">
             <span action="edit">Edit</span>
             <span action="delete">Delete</span>
+            <span action="view">View</span>
             <div purpose="name"></div>
         </div>
+        <a class="path"></a>
     </template>
-    <button id="myBtn">New Folder</button>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
