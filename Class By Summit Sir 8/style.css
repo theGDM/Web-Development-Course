@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+#folderContainer{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.folder{
+    width: 100px;
+    height: 120px;
+    margin: 15px;
+    background-color: #888;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: 1px 2px 3px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header{
+    height: 60px;
+    background-color: #222;
+    display:flex;
+    justify-content: center;
+}
+
+.myFile,.myFolder{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(20, 20, 20);
+    background-color: rgb(206, 206, 206);
+    margin: 15px 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#header .myBtn:hover{
+    box-shadow: 3px 3px 2px rgb(75, 75, 75);
+}
+
+.folder span[action = "rename"],
+.folder span[action = "delete"],
+.folder span[action = "view"] {
+    width: 65px;
+    padding: 2px 4px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.folder span[action = "view"]:hover{
+    color: rgb(0, 116, 211);
+    background-color: #444;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.folder span[action = "delete"]:hover{
+    color: rgb(165, 0, 0);
+    background-color: #444;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.folder span[action = "rename"]:hover{
+    color: green;
+    background-color: #444;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+/* breadCrumb styling */
+#divBreadCrumb{
+    background-color: #888;
+    padding: 3px 1px;
+    font-weight: 500;
+    border: 1px solid #ffff;
+}
+
+.path{
+    background-color: #333;
+    color: #888;
+    padding: 1px 4px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-right: 3px solid #000;
+}
+
+.path:hover{
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+    border-right: 3px solid #fff;
+}
+
