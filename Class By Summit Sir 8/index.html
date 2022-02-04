@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First hands at frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- buttons etc, add folder, add file -->
+        <button class="myBtn myFolder">New Folder</button>
+        <button class="myBtn myFile">New File</button>
+    </div>
+    <!-- Adding bread crumb -->
+    <div id="divBreadCrumb">
+        <!-- to show where we are -->
+        <a class="path" folderId="-1">Root</a>
+    </div>
+    <div id="folderContainer">
+        <!-- <p>Hello!</p>
+        <p>Hello phir se!</p>
+        <p>Hello phir se aur!</p> -->
+    </div>
+    <div id="app">
+        <!-- this is area where app will show(popup, for photo, text file etc) -->
+    </div>
+    <!-- templates are not visible on page -->
+    <!-- ye bo wala html hai jo hum baad me daalna chaahte hai page me -->
+    <!-- templates ke under jo bhi pada hota hai use, document se ni nikal sakte, as it is hided in document
+    but we can find in myTemplates.content and then using querySelector method on it. -->
+    <template id="pageTemplate">
+        <div class="folder" parentId="" folderId="">
+            <span action="view">View</span>
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <div purpose="name"></div>
+        </div>
+        <a class="path"></a>
+    </template>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
