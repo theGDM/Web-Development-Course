@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link rel="stylesheet" href="style.css?v=1" />
+</head>
+
+<body>
+    <div id="header">
+        <button class="addFolder">Add Folder</button>
+        <button class="addTextFile">Add Text File</button>
+    </div>
+    <!-- breadcrumb, to show where we are -->
+    <div id="breadcrumb">
+        <a purpose="path" rid="-1">Root</a>
+    </div>
+    <!-- it will contain folder and files -->
+    <div id="container"></div>
+    <!-- templates -->
+    <template id="templates">
+        <div class="folder" pid="" rid="">
+            <span action="view">View</span>
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span purpose="name"></span>
+        </div>
+        <div class="text-file" pid="" rid="">
+            <span action="view">View</span>
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span purpose="name"></span>
+        </div>
+        <a purpose="path" rid="-1">Root</a>
+    </template>
+    <script src="main.js"></script>
+</body>
+
+</html>
