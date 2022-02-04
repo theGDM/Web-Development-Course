@@ -1,0 +1,10 @@
+- OverAll code structure change
+- File [rename, delete, view]
+- Notepad [Functionality]
+- delete folder/files recursively inside of folder
+- Node-Express-Sql(Backend)
+   
+(Parent -> child) relationship is not easy, because parents have to store all the information of its children,
+its better in the case of mongoDB database, but not in the case sql which we are going to use that is why 
+(child -> parent) every child having information of their parents(through pid) is way more standard.
+
