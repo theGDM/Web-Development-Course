@@ -10,7 +10,7 @@ function cb(error, response, html) {
     if (error) {
         console.log(error);
     } else {
-        handleHtml(html); 
+        handleHtml(html);
     }
 }
 
@@ -18,6 +18,7 @@ function cb(error, response, html) {
 function handleHtml(html) {
     //in selector tool we are getting the whole html body of a requested page!
     let selTool = cheerio.load(html);
+    //console.log(selTool.html());//it will load html
     // let contentArr = selTool("#maincounter-wrap span");//it will return an array of selected content
     let contentArr = selTool(".maincounter-number span");
     console.log(contentArr);
