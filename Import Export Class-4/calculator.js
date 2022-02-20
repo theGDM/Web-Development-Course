@@ -2,23 +2,23 @@
 //conventional function
 
 function addition(a, b) {
-    console.log('The addition is ',a + b);
+    console.log('The addition is ', a + b);
 }
 
 function subtract(a, b) {
-    console.log('The subtraction is ',a - b);
+    console.log('The subtraction is ', a - b);
 }
 
-function multiplication(a,b){
-    console.log('The multiplication is ',a * b);
+function multiplication(a, b) {
+    console.log('The multiplication is ', a * b);
 }
 
-function division(a,b){
-    console.log('The division is ',a / b);
+function division(a, b) {
+    console.log('The division is ', a / b);
 }
 
 
-// add(3, 4);
+// addition(3, 4);
 // subtract(5, 4);
 // multiplication(3, 4);
 // division(8, 3);
