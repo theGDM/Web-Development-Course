@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <button class="addFolder">Add Folder</button>
+        <button class="addTextFile">Add Text File</button>
+    </div>
+
+    <!-- breadcrumb, to show where we are -->
+    <div id="breadcrumb">
+        <a purpose="path" rid="-1">Root</a>
+    </div>
+
+    <!-- it will contain folder and files -->
+    <div id="container"></div>
+
+    <!-- popup for files, xl sheet, word document, album etc. -->
+    <div id="app">
+        <!-- title bar -->
+        <div class="app-title-bar">
+            <div class="app-title"></div>
+            <div class="win-actions">
+                <span class="material-icons">minimize</span>
+                <span class="material-icons">fullscreen</span>
+                <span id="app-close" class="material-icons">close</span>
+            </div>
+        </div>
+        <!-- menu bar -->
+        <div class="app-menu-bar"></div>
+        <!-- body -->
+        <div class="app-body"></div>
+    </div>
+
+    <!-- templates -->
+    <template id="templates">
+        <!-- template for folder -->
+        <div class="folder" pid="" rid="">
+            <span action="view">View</span>
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span purpose="name"></span>
+        </div>
+        <!-- template for text-file -->
+        <div class="text-file" pid="" rid="">
+            <span action="view">View</span>
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span purpose="name"></span>
+        </div>
+        <!-- template for breadcrumb -->
+        <a purpose="path" rid="-1">Root</a>
+        <!-- template for app -->
+        <div purpose="notepad-menu" class="notepad-menu">
+            <span pressed="false" action="save" class="material-icons">save</span>
+            <span pressed="false" action="bold" class="material-icons">format_bold</span>
+            <span pressed="false" action="italic" class="material-icons">format_italic</span>
+            <span pressed="false" action="underline" class="material-icons">format_underline</span>
+            <input type="color" action="bg-color">
+            <input type="color" action="fg-color">
+            <select action="font-family">
+                <option value="monospace">monospace</option>
+                <option value="serif">serif</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="cursive">cursive</option>
+            </select>
+            <select action="font-size">
+                <option value="8px">8</option>
+                <option value="10px">10</option>
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="22px">22</option>
+                <option value="24px">24</option>
+            </select>
+            <span action="download" class="material-icons">download</span>
+            <input action="upload" type="file">
+            <a purpose="download" href="http://google.com">link</a>
+        </div>
+        <div purpose="notepad-body" class="notepad-body">
+            <textarea>Write something!</textarea>
+        </div>
+    </template>
+    <script src="main.js"></script>
+</body>
+
+</html>
