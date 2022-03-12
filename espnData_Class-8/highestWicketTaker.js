@@ -22,7 +22,7 @@ function handleHtml(html) {
     let teamArr = selTool(".match-info.match-info-MATCH .team");
     let winningTeamName;
     // console.log(selTool(teamArr).text());
-    for (let i = 0; i < teamArr.length; ++i){
+    for (let i = 0; i < teamArr.length; ++i) {
         let hasClass = selTool(teamArr[i]).hasClass("team-gray");
         if (!hasClass) {
             let teamName = selTool(teamArr[i]).find(".name");
@@ -32,15 +32,15 @@ function handleHtml(html) {
     }
 
     let inningsArr = selTool(".card.content-block.match-scorecard-table  .Collapsible");
-    let htmlStr = ""; 
+    let htmlStr = "";
 
-    for (let i = 0; i < inningsArr.length; ++i){
+    for (let i = 0; i < inningsArr.length; ++i) {
         let htmlTableContent = selTool(inningsArr[i]).html();
         htmlStr = htmlStr + htmlTableContent; //html content for table
 
         let teamNameElement = selTool(inningsArr[i]).find(".header-title.label");
         let teamName = teamNameElement.text(); //conatins teams names
-        
+
         // console.log(teamName);
         teamName = teamName.split("INNINGS")[0].trim();//first we will split string and that will return an array of two elements
         // console.log(teamName);
@@ -49,13 +49,13 @@ function handleHtml(html) {
         let hwt = 0;
         if (winningTeamName != teamName) {
             let tableRowElement = selTool(inningsArr[i]).find(".table.bowler tbody tr");
-            
-            for (let j = 0; j < tableRowElement.length; ++j){
+
+            for (let j = 0; j < tableRowElement.length; ++j) {
                 // console.log(selTool(tableRowElement[j]).text());
                 let rowData = selTool(tableRowElement[j]).find("td"); //will return array of data elements of each row
                 let playerName = selTool(rowData[0]).text();
                 let wicketsOfBowler = selTool(rowData[4]).text();
-                if (wicketsOfBowler > hwt){
+                if (wicketsOfBowler > hwt) {
                     hwt = wicketsOfBowler
                     hwtName = playerName;
                 }
