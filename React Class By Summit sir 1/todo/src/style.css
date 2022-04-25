@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow:hidden;
+    user-select: none;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.add-task{
+    height: 10vh;
+    width: 100vw;
+}
+
+.add-task form{
+    border: 2px solid green;
+    height: 100%;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    border-radius: 10px; 
+    background-color: rgb(121, 0, 134);
+}
+
+.add-task form input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-task form input[type='button']{
+    cursor: pointer;
+    color: rgb(255, 208, 0);
+    background-color: rgb(0, 170, 170);
+}
+
+.task-lists{
+    height: 90vh;
+    width: 100vw;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+}
+
+.task-lists .todo{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.task-lists .finished{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.task-lists .list-container{
+    height: 70%;
+    width: 50%;
+    background-color: rgb(157, 0, 174);
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #000;
+}
+
+.task-lists .list-container .title{
+    height: 10%;
+    width: 100%;
+    background-color: teal;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.task-lists .list-container .content{
+    height: 90%;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: bisque;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.task-lists .list-container .content div{
+    border-bottom: 2px solid black;
+    padding: 2px;
+    margin: 3px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 102, 36);
+}
+
+.task-lists .list-container .content div:nth-of-type(1){
+    border-top: 2px solid black;
+}
+
+.task-lists .list-container .content div span{
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.content .material-icons{
+    width : 25px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.todo .content .material-icons{
+    color: green;
+}
+
+.finished .content .material-icons{
+    color: red;
+}
