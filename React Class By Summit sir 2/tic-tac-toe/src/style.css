@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+}
+
+.board{
+    width: 50%;
+    height : 100%;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    width: 50%;
+    height : 100%;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    height: 10%;
+    width: 80%;
+    font-size: 35px;
+    color: bisque;
+    border: 4px solid rgb(255, 111, 0);
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: 80%;
+    width: 80%;
+    border: 4px solid rgb(255, 111, 0);
+    position: relative;
+    background-color: #222;
+}
+
+.ttt{
+    width: 80%;
+    height: 80%;
+    border: 2px solid rgb(91, 255, 37);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.history{
+    width: 80%;
+    height: 80%;
+    border: 4px solid rgb(91, 255, 37);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(91, 255, 37);
+    display: flex;
+    flex-direction: row;
+}
+
+.row button{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    border: 2px solid #555;
+    color:rgb(91, 255, 37);
+    font-size: 60px;
+}
+
+.row button:hover{
+    background-color: #333;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.history button{
+    width: 100%;
+    padding: 9px;
+    min-height: 48px;
+    /* button ke case me min-height dena chahiye instead of height, otherwise as number of elements increases
+    the height of each element decreases to content them in the content, and your overflow-y too don't work.*/
+    font-size: 20px;
+    background-color: #111;
+    border: 2px solid #555;
+    color: rgb(80, 226, 255);
+    cursor: pointer;
+}
+
+.history button:hover{
+    background-color: #222;
+    border: 2px solid #000;
+    cursor: pointer;
+}
