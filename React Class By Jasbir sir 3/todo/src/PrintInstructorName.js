@@ -4,8 +4,8 @@ import React from 'react';
 //props is a property object
 //code read bottom to top
 function PrintName(props) { //return JSX
-    let { name, age } = props
-    return (<h1>Name of instructor is {name} and age is {age}</h1>)
+    let { name, age } = props;
+    return (<h1>Name of instructor is {name} and age is {age}</h1>);
 }
 
 //Example of functional component!(Parent Component)
